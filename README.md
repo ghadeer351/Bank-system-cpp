@@ -2,6 +2,12 @@
 
 A console-based bank management system written in C++.
 
+
+## important note ## :to log in use:
+user: Admin
+Password:1111
+
+
 ## Features
 
 - Client management
