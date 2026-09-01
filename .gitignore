@@ -1,0 +1,43 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# Build outputs
+[Bb]in/
+[Oo]bj/
+Debug/
+Release/
+x64/
+x86/
+ARM/
+ARM64/
+
+# Compiled/debug files
+*.exe
+*.dll
+*.obj
+*.pdb
+*.ilk
+*.idb
+*.tlog
+*.res
+*.lastbuildstate
+*.VC.db
+*.VC.VC.opendb
+
+# Visual Studio cache
+ipch/
+*.opensdf
+*.sdf
+
+# CMake/build artifacts
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
