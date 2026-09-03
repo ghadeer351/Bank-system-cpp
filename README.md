@@ -38,4 +38,4 @@ Password:1111
 3. Build the solution.
 4. Run the application.
 
-> Build folders and generated Visual Studio files are intentionally excluded from Git with `.gitignore`.
+
