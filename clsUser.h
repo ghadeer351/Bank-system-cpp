@@ -25,7 +25,6 @@ private:
 		string LoginRecord = "";
 		LoginRecord += clsDate::GetSystemDateTimeString() + Seperator;
 		LoginRecord += UserName + Seperator;
-		LoginRecord += clsUtil::EncryptText(PassWord) + Seperator;
 		LoginRecord += to_string(Permissions);
 		return LoginRecord;
 	}
@@ -119,8 +118,7 @@ private:
 		vector <string> LoginRegisterDataLine = clsString::Split(Line, Seperator);
 		LoginRegisterRecord.DateTime = LoginRegisterDataLine[0];
 		LoginRegisterRecord.UserName = LoginRegisterDataLine[1];
-		LoginRegisterRecord.Password = clsUtil::DecryptText(LoginRegisterDataLine[2]);
-		LoginRegisterRecord.Permissions = stoi(LoginRegisterDataLine[3]);
+		LoginRegisterRecord.Permissions = stoi(LoginRegisterDataLine[2]);
 		return LoginRegisterRecord;
 	}
 
@@ -130,7 +128,6 @@ public:
 	{
 		string DateTime;
 		string UserName;
-		string Password;
 		int Permissions;
 	};
 
@@ -196,12 +193,10 @@ public:
 	{
 		fstream MyFile;
 	
-		MyFile.open("Users1.txt", ios::in);
+		MyFile.open("Users.txt", ios::in);
 		if (MyFile.is_open()) {
-			cout << "okkkkkk-------------------------------------";
 			string Line = "";
 			while (getline(MyFile, Line)) {
-				cout <<"ghadeer" << Line << endl;
 				clsUser User = _ConvertLineToUserObject(Line);
 				if (User.UserName == UserName && User.PassWord == PassWord) 
 				{
