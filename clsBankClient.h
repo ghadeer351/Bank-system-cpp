@@ -46,7 +46,7 @@ private:
 	static void _SaveClientToFail(vector <clsBankClient>& vClient)
 	{
 		fstream MyFail;
-		MyFail.open("ghader", ios::out);
+		MyFail.open("Clients.txt", ios::out);
 
 		if (MyFail.is_open())
 		{
@@ -82,7 +82,7 @@ private:
 		vector<clsBankClient> vClient;
 
 		fstream MyFail;
-		MyFail.open("ghader", ios::in);
+		MyFail.open("Clients.txt", ios::in);
 
 		if (MyFail.is_open())
 		{
@@ -115,7 +115,7 @@ private:
 	void _AddDataLineToFail(string line)
 	{
 		fstream MyFail;
-		MyFail.open("ghader", ios::app);
+		MyFail.open("Clients.txt", ios::app);
 
 		if (MyFail.is_open())
 		{
@@ -213,7 +213,7 @@ public:
 		vector<clsBankClient>vClientData;
 
 		fstream MyFail;
-		MyFail.open("ghader", ios::in );
+		MyFail.open("Clients.txt", ios::in );
 
 		if (MyFail.is_open())
 		{
@@ -264,11 +264,10 @@ public:
 		vector<clsBankClient>vClientData;
 
 		fstream MyFail;
-		MyFail.open("Client.txt", ios::in);
+		MyFail.open("Clients.txt", ios::in);
 
 		if (MyFail.is_open())
 		{
-			cout << "k";
 			string line;
 			while (getline(MyFail, line))
 			{
