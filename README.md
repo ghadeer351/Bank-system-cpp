@@ -1,41 +1,42 @@
-# Bank System - C++
+# Bank Management System
 
-A console-based bank management system written in C++.
-
-
-## important note ## :to log in use:
-user: Admin
-Password:1111
-
+A console-based bank management system built with **C++** and **object-oriented programming**. The project demonstrates core banking workflows and organizes the application into reusable classes and modules.
 
 ## Features
 
 - Client management
-- User management and login
+- User accounts and login flow
 - Deposits and withdrawals
-- Money transfers
-- Transfer logging
+- Transfers between accounts
+- Transfer history and logging
 - Currency management and conversion
-- Date utilities and validation
+- Date utilities and input validation
 
-## Built With
+## Tech Stack
 
 - C++
 - Object-Oriented Programming (OOP)
 - Visual Studio
 
-## Project Structure
+## Getting Started
 
-- `.cpp` — program entry point
-- `.h` — classes and application logic
-- `.txt` — local application data
-- `.sln` / `.vcxproj` — Visual Studio project files
+1. Clone or download this repository.
+2. Open `Bank system course10.sln` in Visual Studio.
+3. Select the appropriate configuration and platform.
+4. Build the solution.
+5. Run the application from Visual Studio.
 
-## Running the Project
+## Project Files
 
-1. Open `Bank system course10.sln` in Visual Studio.
-2. Select **Debug** or **Release** and the appropriate platform.
-3. Build the solution.
-4. Run the application.
+- `.cpp` — application logic and program implementation
+- `.h` — class declarations and interfaces
+- `.txt` — local data files used by the application
+- `.sln` / `.vcxproj` — Visual Studio solution and project files
 
+## Notes
 
+This is an educational/demo project, not production banking software. It does not provide the security, auditing, encryption, or compliance controls required for handling real financial data. Do not use real personal or financial information with it.
+
+## Author
+
+**Ghadeer Debo** — [GitHub](https://github.com/ghadeer351)
