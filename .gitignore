@@ -41,3 +41,7 @@ Makefile
 .DS_Store
 Thumbs.db
 .vscode/
+
+# Local backups and generated logs
+*.local.txt
+*.bak
